@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+   background: linear-gradient(to right, #64daf8da,#c9d6ff);
+   color: rgb(0, 0, 0);
+}
+
+.container{
+    margin: 0 100px;
+
+
+}
+
+.form-box{
+    
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0  0 10px #000000fd;
+    background: white;
+    display: none;
+
+
+}
+.form-box.active{
+    display: block;
+}
+
+h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+input,
+select{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: rgb(53, 53, 53);
+    font-size: 16px;
+    background: rgb(207, 206, 206);
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #010022da;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: #33277cda;
+    color: black;
+    cursor: pointer;
+    
+}
+
+p{
+    font-size: 14.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+p a{
+    font-weight: 600;
+    cursor: pointer;
+    color:rgb(19, 0, 63);
+    text-decoration:none ;
+    
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+.error-message {
+    padding: 12px;
+    background: whitesmoke;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(160, 12, 12);
+    text-align: center;
+    margin-bottom: 20px;
+
+}
