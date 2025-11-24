@@ -27,7 +27,7 @@ function isActiveForm($formName, $activeForm) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -39,7 +39,7 @@ function isActiveForm($formName, $activeForm) {
                 <?= showError($errors['login']); ?>
                 <input type="email" name="email" placeholder="E-mail" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button type="submit" name="login">Login</button>
+                <button type="submit" name="login" class="log-button">Login</button>
                 <p>Don't have an account? 
                     <a href="#" onclick="showForm('register-form')">Register</a>
                 </p>
@@ -59,7 +59,7 @@ function isActiveForm($formName, $activeForm) {
                     <option value="user">User</option>
                     <option value="admin">Admin</option>
                 </select>
-                <button type="submit" name="register">Register</button>
+                <button type="submit" name="register" class="reg-button">Register</button>
                 <p>Already have an account? 
                     <a href="#" onclick="showForm('login-form')">Login</a>
                 </p>
@@ -68,6 +68,6 @@ function isActiveForm($formName, $activeForm) {
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
